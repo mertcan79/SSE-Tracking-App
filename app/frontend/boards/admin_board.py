@@ -13,7 +13,7 @@ from flet import (
 from .members_board import MembersBoard
 from .settings_board import SettingsBoard
 from .tasks_board import TasksBoard
-from .meetings_board import MeetingsBoard
+from .SSE_board import SSEBoard
 from time import sleep
 
 def admin_board(page: Page):
@@ -51,10 +51,10 @@ def admin_board(page: Page):
 
         if len(r1.controls) > 2:
             r1.controls.pop(-1)
-            r1.controls.append(MeetingsBoard())
+            r1.controls.append(SSEBoard())
             page.update()
         else:
-            r1.controls.append(MeetingsBoard())
+            r1.controls.append(SSEBoard())
             page.update()
 
     meetings_button = TextButton("Meetings", icon=icons.MEETING_ROOM, on_click=on_click_meetings)
