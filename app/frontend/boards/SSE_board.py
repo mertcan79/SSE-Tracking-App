@@ -11,8 +11,7 @@ import pprint
 last_member_update =Members().get_all_members().json()[-1][0]
 last_task_update =Tasks().get_tasks().json()[-1][-5]
 
-
-class MeetingsBoard(UserControl):
+class SSEBoard(UserControl):
     """
     class for returning SSE output
     """
