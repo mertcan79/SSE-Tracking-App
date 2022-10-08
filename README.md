@@ -2,7 +2,7 @@
 
 FastAPI based SSE tracker is a simple project that combines two frameworks , Flet and FastAPI.
 
-SSE are displayed, and can be filtered from the settings page.
+SSE are displayed on the SSE board, and can be filtered from the members page.
 
 ## Project Build
 * Fronted with Flet 
@@ -17,6 +17,3 @@ SSE are displayed, and can be filtered from the settings page.
 
 ## Tasks Dashboard
 ![Tasks Dashboard](docs/Tasks.png)
-
-## Settings Dashboard
-![Settings Dashboard](docs/settings.png)
